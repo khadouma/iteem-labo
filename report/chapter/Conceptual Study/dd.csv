@@ -1,0 +1,71 @@
+desgination,code,type,taill,Entete
+entre ou sorte de stock,entreStock,B,1,Stock
+quantite de mouvement de stock,qtStock,N,10,Stock
+code de mouvement de stock,codeStock,N,5,Stock
+date de mouvement de stock,dateStock,DT,19,Stock
+debut de stage,debutStg,D,10,stagiare
+fin de stage,finStg,D,10,stagiare
+code stagiares,codeStg,N,5,stagiare
+theme stage,themeStg,AN,150,stagiare
+code de rendez-vous,codeRndv,N,5,rendez_vous
+date de rendez-vous,dateRndv,D,10,rendez_vous
+depuis,depuisRndv,T,9,rendez_vous
+jusqua,jusquaRndv,T,9,rendez_vous
+observation de rendez-vous,obsRndv,AN,2000,rendez_vous
+motif de maintenance,motifMnt,AN,2000,maintenance
+code de maintenance,codeMnt,AN,10,maintenance
+date de maintenance,dateMnt,D,10,maintenance
+designation de laboratoire,designationLabo,AN,50,laboratoire
+code de laboratoire,codeLabo,AN,6,laboratoire
+departement,departementLabo,AN,50,laboratoire
+code inventaire,codeInv,AN,8,inventaire
+date inventaire,dateInv,D,10,inventaire
+methode d'experience,methodeExp,AN,5000,experience
+titre d'experience,titreExp,AN,150,experience
+code d'experience,codeExp,N,5,experience
+date d'experience,dateExp,D,10,experience
+conclusion d'experience,conclusionExp,AN,5000,experience
+condition operatoire echantillon,conditionOperatoireEch,AN,1000,echantillon
+resultat de echantillon,resultatEch,AN,1000,echantillon
+numero d'echantillon,numEch,N,3,echantillon
+code d'echantillon,codeEch,N,7,echantillon
+code de demande d'article,codeDA,N,5,demande_article
+date de demande d'article,dateDA,D,10,demande_article
+quantite Theorique,qtTheoriqueCI,N,10,contient_inventaire
+quantite Physique,qtPhysiqueCI,N,10,contient_inventaire
+observation,obsCI,AN,500,contient_inventaire
+quantite demande,qtCDA,N,10,contient_demande_article
+quantite achete,qtCA,N,10,contient_achat
+prenom de chercheur,prenomChr,AN,50,chercheur
+mail de chercheur,mailChr,AN,150,chercheur
+telephone de chercheur,telChr,AN,10,chercheur
+matricule de chercheur,matriculeChr,AN,13,chercheur
+photo de chercheur,photoChr,I,100,chercheur
+specialite de chercheur,specialiteChr,AN,100,chercheur
+nom de chercheur,nomChr,AN,50,chercheur
+quantite demande obtenue,qtDB,N,10,benefit
+quantite receptionne,qtRB,N,10,benefit
+code Produit ou verrerie,codeArt,AN,10,article
+designation Produit ou verrerie,designationArt,AN,150,article
+stock minimum de Produit ou verrerie,stockMinArt,N,10,article
+stock Maximum de Produit ou verrerie,stockMaxArt,N,10,article
+fournisseur de Produit ou verrerie,fournisseurArt,AN,100,article
+moyen de Livraison de Produit ou verrerie,moyLivraisonArt,N,3,article
+type Produit ou verrerie,typeArt,B,1,article
+nature de Produit ou verrerie,natureArt,AN,50,article
+marque de Produit ou verrerie,marqueArt,AN,50,article
+designation d'appareil,designationApr,AN,100,appareil
+frequence de Maintenance de l'appreil,frequenceMaintenanceApr,N,2,appareil
+date d'achat de l'appareil,dateAchatApr,D,10,appareil
+id appareil,idApr,AN,30,appareil
+numero serie de l'appareil,numSerieApr,AN,20,appareil
+marque  de l'appareil,marqueApr,AN,50,appareil
+Fournisseur  de l'appareil,FournisseurApr,AN,100,appareil
+code d'analyse,codeAnly,N,6,analyse
+carde d'analyse,cardeAnly,AN,100,analyse
+nature d'analyse,natureAnly,AN,50,analyse
+type d'analyse,typeAnly,AN,50,analyse
+nombre d'echantillon d'analyse,echantillonAnly,N,2,analyse
+date d'analyse,dateAnly,D,10,analyse
+code d'achat,codeAcht,AN,10,achat
+date d'achat,dateAcht,D,10,achat

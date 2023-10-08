@@ -1,1 +1,1 @@
-# iteem-labo
+# labo-khadouma

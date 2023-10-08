@@ -1,0 +1,369 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <!-- Site Metas -->
+    <title>Laboratoires de la Faculte de Chimie</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="Laboratoires de la Faculte de Chimie">
+    <meta name="author" content="khadouma benkaakaa">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'images/logo.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!-- LOADER -->
+     <!-- <div id="preloader">
+		<div class="loader">
+			<img src="images/preloader.gif" alt="" />
+		</div>
+    </div>end loader -->
+    <!-- END LOADER -->
+	
+	<!-- Start top bar -->
+	<div class="main-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="left-top">
+						<a class="new-btn-d br-2" href="#"><span>Faculté de Chimie</span></a>
+						<div class="mail-b"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> fchimie@usthb.dz</a></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="wel-nots">
+						<p>Bienvenue dans votre laboratoire!</p>
+					</div>
+					<div class="right-top">
+						<ul>
+							<li><a href="https://www.facebook.com/FaculteDeChimieUSTHB"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End top bar -->
+	
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+				<a class="navbar-brand" href="index.html"><img width="56px" src="{%static 'images/logo.png' %}" alt="image"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="#home">Accueil</a></li>
+                        <li><a class="nav-link" href="#about">À Propos</a></li>
+                        <li><a class="nav-link" href="#services">Appareils</a></li>
+						<li><a class="nav-link" href="#team">Responsable de Laboratoire</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+						<li><a class="nav-link" href="{% url 'admin:index' %}">Connecter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start Banner -->
+	<div class="ulockd-home-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="pogoSlider" id="js-main-slider">
+					{%for item in sliders%}
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url('{{item.photo.url}}')">
+						<div class="lbox-caption pogoSlider-slide-element">
+							<div class="lbox-details">
+								<h1>{{item.titre}}</h1>
+								<p>{{item.contenue}}</p>
+								<a href="{{item.lien}}" class="btn">visiter</a>
+							</div>
+						</div>
+					</div>
+					{%endfor%}
+				</div><!-- .pogoSlider -->
+			</div>
+		</div>
+	</div>
+	<!-- End Banner -->
+	
+	<!-- Start About us -->
+	<div id="about" class="about-box">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>À Propos</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2>Bienvenue</h2>
+								<p>La plateforme des laboratoires de la Faculté de Chimie de l'USTHB est une application destinée à faciliter la gestion des ressources et des expériences au sein des laboratoires de la faculté. Voici une description détaillée des fonctionnalités principales de cette plateforme. </p>
+								<p>la plateforme vise à optimiser la gestion des ressources (appareils et produits chimiques) ainsi que des expériences menées au sein des laboratoires de la Faculté de Chimie de l'USTHB. Elle offre une interface conviviale pour les chercheurs, facilitant ainsi le processus de planification et d'exécution des travaux de recherche. </p>
+								<a href="{% url 'admin:index' %}" class="new-btn-d br-2">Rejoindre</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about-m">
+									<ul id="banner">
+										<li>
+											<img src="{%static 'images/about-img-01.jpg'%}" alt="">
+										</li>
+										<li>
+											<img src="{%static 'images/about-img-02.jpg'%}" alt="">
+										</li>
+										<li>
+											<img src="{%static 'images/about-img-03.jpg'%}" alt="">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About us -->
+	
+	<!-- Start Services -->
+	<div id="services" class="services-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Appareils</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="owl-carousel owl-theme">
+						{%for item in appareils %}
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon">{{item.abrv}}</div>
+								<h3 class="title">{{item.codeLabo}}</h3>
+								<p class="description">
+									{{item.designationApr}}
+								</p>
+								<a href="{% url 'admin:index' %}" class="new-btn-d br-2">Réserver</a>
+							</div>
+						</div>
+						{%endfor%}
+						 
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- End Services -->
+	
+	<!-- Start Team -->
+	<div id="team" class="team-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Responsable de Laboratoire</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				{%for item in chercheurs%}
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="{{item.photoChr.url}}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">{{item.nom_prenom}}</h3>
+                            <span class="post">{{item.mailChr}}</span>
+                            <ul class="social">
+                                <li><a href="mailto:{{item.mailChr}}"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+								
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				{%endfor%}
+            </div>
+			
+		</div>
+	</div>
+	
+	<!-- End Team -->
+	
+	
+	<!-- Start Contact -->
+	<div id="contact" class="contact-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Contact</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				
+				<div class="col-lg-12 col-xs-12">
+				  <div class="contact-block">
+					<form id="contactForm" action="{% url 'send_email' %}" method="post">
+						{% csrf_token %}
+					  <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="nom et prenom" required data-error="Please enter your name">
+								<div class="help-block with-errors"></div>
+							</div>                                 
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" placeholder="Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+								<div class="help-block with-errors"></div>
+							</div> 
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" placeholder="Telephone" id="number" class="form-control" name="number" required data-error="Please enter your number">
+								<div class="help-block with-errors"></div>
+							</div> 
+						</div>
+						<div class="col-md-12">
+							<div class="form-group"> 
+								<textarea class="form-control" id="message" placeholder="Message" rows="8" data-error="Write your message" required></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="submit-button text-center">
+								<button class="btn btn-common" id="submit" type="submit">Envoyer</button>
+								<div id="msgSubmit" class="h3 text-center hidden"></div> 
+								<div class="clearfix"></div> 
+							</div>
+						</div>
+					  </div>            
+					</form>
+				  </div>
+				</div>
+				
+				
+				<div class="col-lg-12 col-xs-12">
+					<div class="left-contact">
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-location-arrow" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Adresse</h4>
+								<p>Université des sciences et de la technologie Houari-Boumédiène</p>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Email</h4>
+								<a href="#">fchimie@usthb.dz</a>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Telephone</h4>
+								<a href="#">12345 67890</a><br>
+								<a href="#">12345 67890</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+	
+	<!-- Start Subscribe -->
+	<div class="subscribe-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="subscribe-inner text-center clearfix">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Subscribe -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">Tous les droits réservés. &copy; 2023 <a >ITEEM</a> developer par : <a>khadouma benkaakaa</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="{%static 'js/jquery.min.js' %}"></script>
+	<script src="{%static 'js/popper.min.js' %}"></script>
+	<script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+	<script src="{%static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{%static 'js/jquery.pogo-slider.min.js' %}"></script> 
+	<script src="{%static 'js/slider-index.js' %}"></script>
+	<script src="{%static 'js/smoothscroll.js' %}"></script>
+	<script src="{%static 'js/TweenMax.min.js' %}"></script>
+	<script src="{%static 'js/main.js' %}"></script>
+	<script src="{%static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{%static 'js/form-validator.min.js' %}"></script>
+    <script src="{%static 'js/contact-form-script.js' %}"></script>
+	<script src="{%static 'js/isotope.min.js' %}"></script>	
+	<script src="{%static 'js/images-loded.min.js' %}"></script>	
+    <script src="{%static 'js/custom.js' %}"></script>
+</body>
+</html>

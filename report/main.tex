@@ -1,0 +1,103 @@
+\documentclass{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage[l3]{csvsimple}
+\usepackage{longtable} 
+\usepackage{fullpage}
+\usepackage{float}
+\usepackage{pgf-pie}
+\usepackage{tikz}
+
+\usepackage{svg}
+\geometry{margin=2cm }
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \textbf{\LARGE République Algérienne Démocratique et Populaire} \\
+        \vspace{0.5cm}
+        \textbf{\large Ministère de la Formation et de l'Enseignement Professionnels \\ Institut National Spécialisé de la Formation Professionnelle} \\
+        \textbf{\large Abdelkader Maatouk – Beaulieu} \\
+        \vspace{1cm}
+        \centering{\includegraphics[width=0.2\textwidth]{images/iteem.png} }
+        
+        \vspace{0.5cm}
+        \textbf{\Large MEMOIRE POUR L'OBTENTION} \\
+        \vspace{0.5cm}
+        \textbf{\Large Du Diplôme Du Technicien Supérieur en Informatique} \\
+        \textbf{\Large Option: Base des Données} \\
+        \vspace{1cm}
+        \textbf{\huge Conception et Réalisation d'un système d'information pour la Gestion de laboratoire } \\
+        \vspace{1cm}
+        \textbf{\large Organisme d'accueil: \\
+        Faculté de Chimie (USTHB) } \\
+        \vspace{0.5cm}
+        \includegraphics[width=0.1\textwidth]{images/usthb.png} 
+        
+        \vfill     
+         {\Large\textbf{Par \\ \vspace{0.5cm} Khadouma BENKAAKAA}}
+  
+          \vfill
+          \vspace{1cm}
+          {\large{encadré par: BENTURKI Oumessaad}}
+          \vspace{1cm}
+          
+          {\large\textbf{Sept 2023}}
+        
+    \end{center}
+\end{titlepage}
+
+\chapter*{Dédicace}
+Je Dédie Ce Travail    \dots \\ \\
+
+À mes chers parents \\ \\
+
+Aucune dédicace ne saurait exprimer mon respect, mon amour éternel et ma considération pour les sacrifices que vous avez consenties pour mon instruction et mon bien être.\\ \\
+Je vous remercie pour tout le soutien et l’amour que vous me portez depuis mon enfance et j’espère que votre bénédiction m’accompagne toujours.\\ \\
+Que ce modeste travail soit l’exaucement de vos vœux tant formulés, le fruit de vos innombrables sacrifices, bien que je ne vous en acquitte jamais assez.\\ \\
+Puisse Dieu, le Très Haut, vous accorder santé, bonheur et longue vie et faire en sorte que jamais je ne vous déçoive.\\ \\ \\
+
+
+À ma sœurs Nacera et mes  frères abdellrahmane et Ahmed \\
+
+Les mots ne suffisent guère pour exprimer l’attachement, l’amour et l’affection que je porte pour vous.\\
+
+À ma grande mère\\
+
+À mes oncles et mes tantes\\
+
+\chapter*{Remerciements}
+Nous remercions en premier lieu notre Grand Dieu le Tout Puissant de nous avoir guidé et donné la santé, le courage et la volonté pour achever ce modeste travail.\\ \\
+
+Le travail présenté dans ce mémoire a été réalisé au sein du laboratoire d’Etude Physico-chimique des Matériaux et Application à l’Environnement de la Faculté de Chimie de l’Université des Sciences et de la Technologie Houari Boumediene USTHB.\\
+
+Je tiens également a  remercier  madame BENTURKI Oumessaâd  d’avoir accepter ma demande comme stagiaire au sein de son laboratoire. \\
+
+
+ Je tiens à exprimer ma gratitude spéciale envers M. Bouzegzeg Zakaria pour son précieux soutien et ses conseils.
+
+\tableofcontents
+\listoffigures
+\listoftables
+\chapter*{Introduction}
+La chimie est une discipline scientifique fondamentale qui contribue grandement à de nombreux domaines, allant de l'industrie pharmaceutique à la recherche environnementale. Dans le contexte universitaire, les laboratoires de chimie jouent un rôle essentiel dans la formation des étudiants, la recherche scientifique et le développement de nouvelles connaissances.
+
+La gestion efficace d'un laboratoire de chimie est cruciale pour assurer la sécurité des personnes travaillant dans cet environnement, garantir l'exactitude des résultats des expériences, optimiser l'utilisation des ressources et faciliter la communication entre les membres du laboratoire. Cependant, la gestion manuelle des tâches, des données et des ressources peut devenir complexe et fastidieuse, surtout dans un environnement dynamique où de multiples expériences sont menées simultanément.
+
+Pour répondre à ces défis, la conception et la réalisation d'un système d'information spécifique pour la gestion de laboratoire deviennent indispensables. Ce projet vise à développer une solution informatique sur mesure pour le laboratoire de la Faculté de Chimie, afin d'optimiser ses opérations et de faciliter la collaboration entre les chercheurs, les enseignants et les étudiants.
+
+L'objectif principal de ce système d'information est de centraliser et d'automatiser les processus de gestion du laboratoire, en fournissant des fonctionnalités adaptées aux besoins spécifiques de la chimie et de la recherche scientifique. Il s'agit d'une initiative qui favorisera l'efficacité, la traçabilité et la sécurité des activités du laboratoire tout en renforçant la qualité des recherches entreprises.
+
+Ce projet représente une opportunité passionnante de moderniser et d'optimiser la gestion du laboratoire de la Faculté de Chimie, tout en renforçant la qualité de la recherche et de l'enseignement dans le domaine de la chimie. En intégrant les avancées technologiques avec les besoins spécifiques du laboratoire, nous aspirons à offrir une solution complète et intégrée pour améliorer l'efficacité opérationnelle et faciliter les découvertes scientifiques au sein de notre faculté.
+
+
+\include{chapter/Preliminary Study/main}
+\include{chapter/Study of the Existing/main}
+\include{chapter/Conceptual Study/main}
+\include{chapter/Implementation of the Conceptual Model/main}
+
+\end{document}
